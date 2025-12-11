@@ -1,0 +1,144 @@
+# ETHAN Case Repository - .gitignore
+# Ensures sensitive and unredacted materials are never committed
+
+# ===================================
+# UNREDACTED / SENSITIVE MATERIALS
+# ===================================
+
+# Never commit unredacted documents
+*_UNREDACTED.*
+*_unredacted.*
+*_original.*
+*_ORIGINAL.*
+
+# Private/sensitive directories
+/private/
+/unredacted/
+/originals/
+/sensitive/
+/confidential/
+
+# Personal information files
+*PII*
+*pii*
+*personal*
+
+# ===================================
+# TEMPORARY & WORKING FILES
+# ===================================
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Working drafts that shouldn't be committed yet
+*_DRAFT.*
+*_draft.*
+*_WIP.*
+*_wip.*
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.sublime-*
+*.code-workspace
+
+# ===================================
+# SECURITY & CREDENTIALS
+# ===================================
+
+# Never commit credentials or keys
+*.key
+*.pem
+*.p12
+credentials.*
+secrets.*
+.env
+.env.local
+
+# ===================================
+# BUILD & COMPILED FILES
+# ===================================
+
+# Node modules (if any tooling is added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any tooling is added)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# ===================================
+# SYSTEM & ARCHIVE FILES
+# ===================================
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# System files
+.DS_Store
+desktop.ini
+*.lnk
+
+# ===================================
+# LOGS & DEBUG
+# ===================================
+
+# Log files
+*.log
+logs/
+*.debug
+
+# ===================================
+# REDACTION WORKING FILES
+# ===================================
+
+# Redaction software working files
+*.xfdf
+*.fdf
+*_redaction_work.*
+
+# Adobe Acrobat temporary files
+*.acrobatch
+*.api
+
+# ===================================
+# METADATA & CACHE
+# ===================================
+
+# Metadata files that might contain PII
+*.metadata
+.cache/
+cache/
+
+# ===================================
+# NOTES & PERSONAL FILES
+# ===================================
+
+# Personal notes that shouldn't be committed
+NOTES.md
+notes.md
+TODO_private.md
+*_personal.*
+
+# ===================================
+# EXCEPTIONS (Files to INCLUDE)
+# ===================================
+
+# None currently - all files should be explicitly added if they're safe to publish
