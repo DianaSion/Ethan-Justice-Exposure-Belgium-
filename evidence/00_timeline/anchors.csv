@@ -1,0 +1,13 @@
+anchor_id,date,actor,event,summary,tags,exhibit_path,source_type,source_ref,page,sha256,importance,notes
+ETH-20211028-INC,2021-10-28,School (Damiaan),Bullying/stabbing incident reported,"Initial school incident; handling noted minimal.","SCHOOL;REPORT",01_school/2021-10-28_incident_report.pdf,PDF,,,,high,
+ETH-20211125-REQ,2021-11-25,Diana → CLB,Parent requests 1-on-1 safety meeting,"Request for individual safety arrangement after incident.","EMAIL;CLB",02_CLB/2021-11-25_parent_1on1_request.eml,EMAIL,,,,medium,
+ETH-20211130-MDOC,2021-11-30,CLB,M-doc escalation citing non-cooperation/absences,"Escalation memo; frames attendance and cooperation issues.","CLB;REPORT",02_CLB/2021-11-30_M-doc.pdf,PDF,,,,high,
+ETH-20220803-VICTIM,2022-08-03,Prosecutor,Victim status acknowledged,"Criminal track recognizes victim status.","POLICE;ADMIN",03_police_prosecution/2022-08-03_victim_ack.pdf,PDF,,,,medium,
+ETH-20220902-ORDER,2022-09-02,Prosecutor,Order to investigate school neglect,"Order issued to police to investigate school handling.","ORDER;POLICE",03_police_prosecution/2022-09-02_prosecutor_order_investigate_school.pdf,PDF,,,,high,
+ETH-20220929-RULING,2022-09-29,Youth Court (Leuven),Out-of-home placement ruling,"Youth court ruling precedes police return timing.","COURT;ORDER",04_juvenile_court_SDJ/2022-09-29_ruling.pdf,PDF,,,,critical,"Timing vs. 2022-10-14 police return is central."
+ETH-20221014-RETURN,2022-10-14,Police,Police return on school neglect investigation,"Return filed after court ruling; check investigative completeness.","POLICE;REPORT",03_police_prosecution/2022-10-14_police_return.pdf,PDF,,,,critical,
+ETH-20221111-ER,2022-11-11,Hospital ER,Acute anxiety/separation distress,"ER record documenting acute stress response.","MEDICAL;REPORT",05_medical_psych/2022-11-11_ER_redacted.pdf,PDF,,,,high,
+ETH-20230426-SDJADOC,2023-04-26,SDJ,A-DOC placement plan (18–21) and subsidy path,"Long-horizon placement plan.","SDJ;REPORT",04_juvenile_court_SDJ/2023-04-26_SDJ_A-DOC.pdf,PDF,,,,high,
+ETH-20230917-OOOC,2023-09-17,OOOC Ter Heide,Final diagnostic opposes removal; warns of harm,"Independent diagnostic report contradicts extended placement.","EXPERT;REPORT",05_medical_psych/2023-09-17_OOOC_final.pdf,PDF,,,,critical,
+ETH-2024-TBD-01,,,,"","","",,,,,,
+ETH-2025-TBD-01,,,,"","","",,,,,,
