@@ -1,0 +1,73 @@
+name: Lock main branch protection (linear history)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  protect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ensure main exists and set default branch
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Get repo info
+            const repoInfo = await github.request('GET /repos/{owner}/{repo}', { owner, repo });
+            const currentDefault = repoInfo.data.default_branch;
+
+            // Check if main exists
+            let hasMain = true;
+            try {
+              await github.request('GET /repos/{owner}/{repo}/git/ref/{ref}', { owner, repo, ref: `heads/main` });
+            } catch (e) {
+              hasMain = false;
+            }
+
+            if (!hasMain) {
+              // Create main from current default
+              const srcRef = await github.request('GET /repos/{owner}/{repo}/git/ref/{ref}', { owner, repo, ref: `heads/${currentDefault}` });
+              const sha = srcRef.data.object.sha;
+              await github.request('POST /repos/{owner}/{repo}/git/refs', {
+                owner,
+                repo,
+                ref: 'refs/heads/main',
+                sha,
+              });
+            }
+
+            // Set default branch to main
+            await github.request('PATCH /repos/{owner}/{repo}', { owner, repo, default_branch: 'main' });
+            core.info('Default branch set to main.');
+
+      - name: Apply branch protection (require linear history)
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const branch = 'main';
+            await github.request('PUT /repos/{owner}/{repo}/branches/{branch}/protection', {
+              owner,
+              repo,
+              branch,
+              required_status_checks: null,
+              enforce_admins: true,
+              required_pull_request_reviews: {
+                dismiss_stale_reviews: false,
+                require_code_owner_reviews: true,
+                required_approving_review_count: 1,
+                require_last_push_approval: false,
+              },
+              restrictions: null,
+              required_linear_history: true,
+              allow_force_pushes: false,
+              allow_deletions: false,
+            });
+            core.info('Branch protection applied to main with linear history requirement.');
