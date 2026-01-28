@@ -171,3 +171,28 @@ Keep all statements tied to an exhibit; if a fact is disputed, mark it and cite 
 Acknowledgment of Source Dossier
 
 This README summarizes and structures the evidence and findings contained in the “ETHAN case” dossier you provided. For provenance and verification, link this repository back to the original dossier in your commit message and within /evidence/INDEX.md.
+
+## GDPR Article 6 Notice — Controller: Diana Gayanovich (Origin)
+
+Purpose
+Document professional conduct and institutional actions in the ETHAN case for accountability and the establishment, exercise, or defense of legal claims.
+
+Lawful basis (GDPR Art. 6)
+- Art. 6(1)(f) Legitimate interests: Processing is necessary for accountability and for establishing, exercising, or defending legal claims involving my under‑age child. A balancing test is applied to ensure rights and freedoms are not overridden.
+- Note on public authorities: “Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.” This limitation applies to public authorities themselves, not to private controllers.
+- Freedom of expression and information: Publication is carried out consistently with GDPR Article 85 and applicable Belgian law, balancing accountability and privacy.
+
+Scope and minimization
+- Officials and professionals (social workers, judges, police, school staff): Data here is about professional conduct in official capacity. This repository does not discuss their private lives.
+- Minor’s data: My child’s data is handled with heightened protection and minimization; sensitive elements may be redacted where appropriate.
+- Special categories (Art. 9): Included only if strictly necessary for legal claims; minimized or redacted where appropriate.
+
+Accuracy, corrections, and retention
+- Content is limited to necessary facts and evidence; I will correct verified inaccuracies and consider proportionate redactions.
+- Data is retained as long as necessary for accountability and legal purposes related to the ETHAN case.
+
+Controller decision
+- As the Origin/controller (Diana Gayanovich), I decide whether and how to rely on GDPR Article 6 for this repository, consistent with Article 85 and applicable Belgian law.
+
+Contact and requests
+- Verified requests for correction or proportionate redaction can be submitted via the contact method I provide. Requests about private‑life content (not professional conduct) will be assessed and, if valid, redacted or removed.
