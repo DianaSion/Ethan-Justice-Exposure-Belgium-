@@ -59,6 +59,7 @@ Thank you for your interest in contributing to this repository. This document ou
 3. **Neutrality:** Present facts objectively; let evidence speak for itself.
 4. **Cite sources:** All claims must reference specific exhibits or sources.
 5. **Collaboration:** Work constructively with maintainers and other contributors.
+6. **Security awareness:** Maintainers with repository access should enable two-factor authentication (see `SECURITY_SETUP.md`).
 
 ### What We Accept
 - ✅ Evidence-based documentation

@@ -196,3 +196,11 @@ Controller decision
 
 Contact and requests
 - Verified requests for correction or proportionate redaction can be submitted via the contact method I provide. Requests about private‑life content (not professional conduct) will be assessed and, if valid, redacted or removed.
+
+## Repository Security
+
+This repository contains sensitive legal documentation. To maintain evidence integrity:
+- Maintainers should enable GitHub two-factor authentication
+- See `SECURITY_SETUP.md` for detailed security configuration instructions
+- All commits should maintain proper chain of custody
+- Regular security audits recommended for repositories containing legal evidence
